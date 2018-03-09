@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Настроение</title>
+<meta charset=utf-8 />
+<title>Настроение</title>
+
   <script id="quotes_json" type="application/json">
     [
       {
@@ -20,6 +22,21 @@
     ]
   </script>
 </head>
+
 <body>
+
+
+<p onload="myFunction()">
+</p>
+
+
+<script>
+    function myFunction() {
+     var quote_json = document.getElementById("quotes_json")
+     var random_quote = quotes_json[Math.floor(Math.random() * quotes_json.length)];
+
+    };
+    myFunction();
+  </script>
 </body>
 </html>
