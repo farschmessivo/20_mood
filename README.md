@@ -1,6 +1,10 @@
 # Site for the Mood
 
-[TODO. There will be project description]
+The page welcomes user with a random ironic message
+
+# URL
+
+https://farschmessivo.github.io/20_mood/
 
 # Project Goals
 

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.slab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.background-image {
+  background:
+    url("../images/outlets.png")
+    repeat
+    100% 100%
+  ;
+}
+
+.box {
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.in-box{
+	margin: 0 -50% 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quote {
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #98FB98;
+	font-size: 4vw;
+}
+
+.signature {
+	margin-right: 10%;
+	text-align: right;
+	color: #98FB98;
+	font-size: 2vw;
+}

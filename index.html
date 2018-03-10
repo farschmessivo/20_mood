@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset=utf-8 />
 	<title>Настроение</title>
-
-	<script id="quotes_json" type="application/json">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <script id="quotes_json" type="application/json">
 		[
       {
         "phrase": "Кукурузные хлопья - теперь без асбеста!",
@@ -15,7 +15,7 @@
         "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
       },
       {
-        "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
+        "phrase": "Вывеска над кафе — 'Мы открылись'. Что-то не так. Где же 'Мы открылись'?"
       },
       {
         "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
@@ -26,14 +26,21 @@
 
 
 
-	<body onload="myFunction()">
-    <p id="quote"> </p>
-
+	<body onload="myFunction()" class="background-image">
+    <div class="box">
+      <div class="in-box">
+  <p id="quote" class="slab quote"> </p>
+  <p id="signature" class="slab signature"> </p>
+      </div>
+      </div>
 	<script>
 		function myFunction() {
-    var quotes_json = JSON.parse(document.getElementById("quotes_json").innerHTML);
-    var random_quote = quotes_json[Math.floor(Math.random() * quotes_json.length)];
+    var quotes = JSON.parse(document.getElementById("quotes_json").innerHTML);
+    var random_quote = quotes[Math.floor(Math.random() * quotes.length)];
 	    document.getElementById("quote").innerHTML = random_quote.phrase;
+    if (random_quote.signature !== undefined) {
+		  document.getElementById("signature").innerHTML = random_quote.signature;
+		  }
     };
     myFunction();
 	</script>
