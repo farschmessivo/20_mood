@@ -19,7 +19,7 @@
 }
 
 .in-box{
-	margin: 0 -50% 0 0;
+  margin: 0 -50% 0 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,16 +27,16 @@
 }
 
 .quote {
-	text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
-	color: #98FB98;
-	font-size: 4vw;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #98FB98;
+  font-size: 4vw;
 }
 
 .signature {
-	margin-right: 10%;
-	text-align: right;
-	color: #98FB98;
-	font-size: 2vw;
+  margin-right: 10%;
+  text-align: right;
+  color: #98FB98;
+  font-size: 2vw;
 }
