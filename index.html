@@ -3,9 +3,9 @@
 <head>
 	<meta charset=utf-8 />
 	<title>Настроение</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  <script id="quotes_json" type="application/json">
+	<script id="quotes_json" type="application/json">
     [
       {
         "phrase": "Кукурузные хлопья - теперь без асбеста!",
@@ -21,16 +21,16 @@
         "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
       }
     ]
-  </script>
+	</script>
 </head>
-  <body onload="myFunction()" class="background-image">
+	<body onload="myFunction()" class="background-image">
     <div class="box">
       <div class="in-box">
         <p id="quote" class="slab quote"> </p>
-        <p id="signature" class="slab signature"> </p>
+				<p id="signature" class="slab signature"> </p>
       </div>
     </div>
-	<script>
+		<script>
   function myFunction() {
     var quotes = JSON.parse(document.getElementById("quotes_json").innerHTML);
     var random_quote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -41,6 +41,5 @@
     };
     myFunction();
 	</script>
-  </body>
-
+	</body>
 </html>
