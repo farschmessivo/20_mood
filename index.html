@@ -4,7 +4,7 @@
 <head>
 	<meta charset=utf-8 />
 	<title>Настроение</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<script id="quotes_json">
 		var quotes = [
@@ -16,7 +16,7 @@
         "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
       },
       {
-		 "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
+		 "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003cМы открылись\u003e'?"
       },
       {
         "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
@@ -33,8 +33,9 @@
 		</div>
 	</div>
 	<script>
-	  function myFunction() {
-	  "use strict";
+
+		function myFunction() {
+	 "use strict";
     var random_quote = quotes[Math.floor(Math.random() * quotes.length)];
       document.getElementById("quote").innerHTML = random_quote.phrase;
     if (random_quote.signature !== undefined) {
